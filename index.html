@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <!--HEADER SECTION-->
+      <header class="page__header">
+        <!--USER DETAILS AND WELCOME MSG-->
+        <div class="header__welcomeMsg">
+          <div class="welcomeMsg-details">
+            <div class="user__details">
+              <span class="welcomeMsg">Hi</span>
+              <input type="text" class="welcomeMsg-input" placeholder="User" />
+            </div>
+            <span class="count-task"> You have 0 tasks </span>
+          </div>
+          <!--USER AVATAR-->
+          <figure class="user-avatar">
+            <img src="./images/man.png" alt="user avatar" />
+          </figure>
+        </div>
+      </header>
+      <!--NAVIGATION -->
+      <nav class="page__navigation">
+        <ul class="nav__list">
+          <li class="nav-item"><a href="#">Show All</a></li>
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#">Office</a></li>
+        </ul>
+      </nav>
+      <main>
+        <!--FORM SECTION-->
+        <section class="tasks__section">
+          <form class="task-form">
+            <div class="task__input-wrapper">
+              <input
+                type="text"
+                class="task__input"
+                placeholder="Enter your task here"
+              />
+            </div>
+            <div class="task__type-wrapper">
+              <label class="home__label label">
+                <input
+                  type="radio"
+                  name="taks-type"
+                  value="home task"
+                  id="home"
+                  class="home__type-task-input"
+                />
+                <div class="home__task task">
+                  <h3 class="task-title">Home task</h3>
+                  <!-- <div class="img__wrapper">
+                    <img src="./images/home_work.jpg" alt="" />
+                  </div> -->
+                  <span class="home__task-count count"
+                    >You have 0 home tasks</span
+                  >
+                </div>
+              </label>
+              <label class="business__label label">
+                <input
+                  type="radio"
+                  name="taks-type"
+                  value="business task"
+                  id="business"
+                  class="business_type__task-input"
+                />
+                <div class="business__task task">
+                  <h3 class="task-title">Business task</h3>
+                  <!-- <div class="img__wrapper">
+                    <img src="./images/business_work.jpg" alt="" />
+                  </div> -->
+                  <span class="business__task-count count"
+                    >You have 0 home tasks</span
+                  >
+                </div>
+              </label>
+            </div>
+            <button type="submit" class="submit__form-btn">Add task</button>
+          </form>
+        </section>
+      </main>
+      <section class="todo-list">
+        <h2 class="todo-header">Your task:</h2>
+        <div class="task__container"></div>
+      </section>
+    </div>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
